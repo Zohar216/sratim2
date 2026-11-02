@@ -1,0 +1,85 @@
+{
+  "expo": {
+    "name": "Jarvis",
+    "slug": "jarvis",
+    "scheme": "jarvis",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0B1020",
+    "android": {
+      "package": "com.zohar.jarvis",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "backgroundColor": "#0B1020",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_CONTACTS",
+        "com.android.alarm.permission.SET_ALARM",
+        "android.permission.INTERNET",
+        "android.permission.VIBRATE"
+      ],
+      "blockedPermissions": [
+        "android.permission.WRITE_CONTACTS",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.CALL_PHONE",
+        "android.permission.SEND_SMS",
+        "android.permission.SYSTEM_ALERT_WINDOW"
+      ],
+      "allowBackup": false
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      [
+        "expo-localization",
+        {
+          "supportsRTL": true,
+          "forcesRTL": true
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "minSdkVersion": 29
+          }
+        }
+      ],
+      [
+        "expo-contacts",
+        {
+          "contactsPermission": "Jarvis קורא את אנשי הקשר רק כדי למצוא למי לשלוח הודעה או להתקשר."
+        }
+      ],
+      [
+        "expo-speech-recognition",
+        {
+          "microphonePermission": "Jarvis משתמש במיקרופון רק כשאתה לוחץ על כפתור הדיבור.",
+          "speechRecognitionPermission": "Jarvis ממיר את הדיבור שלך לטקסט כדי להבין את הפקודה.",
+          "androidSpeechServicePackages": [
+            "com.google.android.googlequicksearchbox",
+            "com.google.android.as",
+            "com.samsung.android.bixby.agent"
+          ]
+        }
+      ],
+      [
+        "llama.rn",
+        {
+          "enableOpenCLAndHexagon": true
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

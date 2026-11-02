@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Jarvis (Expo app) has its own tooling.
+    "jarvis/**",
   ]),
 ]);
 

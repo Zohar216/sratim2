@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="jarvis_accessibility_label">Jarvis</string>
+  <string name="jarvis_accessibility_description">Jarvis משתמש בשירות הנגישות כדי לקרוא את המסך ולבצע פעולות (לחיצה, הקלדה, גלילה) רק כשאתה נותן לו משימה. תוכן המסך לא נשלח לשום שרת ולא נשמר. פעולות רגישות דורשות את אישורך, ואפשר לעצור כל פעולה בכפתור "עצור".</string>
+</resources>
