@@ -37,6 +37,8 @@
   },
   "scripts": {
     "start": "expo start",
+    "start:go": "expo start --go",
+    "start:go:tunnel": "expo start --go --tunnel",
     "android": "expo run:android",
     "test": "jest",
     "typecheck": "tsc --noEmit",
